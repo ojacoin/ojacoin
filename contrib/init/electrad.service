@@ -1,0 +1,26 @@
+[Unit]
+Description=ojacoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=ojacoin
+Group=ojacoin
+
+Type=forking
+PIDFile=/var/lib/ojacoind/ojacoind.pid
+
+ExecStart=/usr/bin/ojacoind -daemon -pid=/var/lib/ojacoind/ojacoind.pid \
+          -conf=/etc/ojacoin/ojacoin.conf -datadir=/var/lib/ojacoind
+
+ExecStop=-/usr/bin/ojacoin-cli -conf=/etc/ojacoin/ojacoin.conf \
+         -datadir=/var/lib/ojacoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

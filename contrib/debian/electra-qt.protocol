@@ -1,0 +1,11 @@
+[Protocol]
+exec=ojacoin-qt '%u'
+protocol=ojacoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

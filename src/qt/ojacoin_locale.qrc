@@ -1,0 +1,36 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/ojacoin_bg.qm</file>
+        <file alias="ca">locale/ojacoin_ca.qm</file>
+        <file alias="cs">locale/ojacoin_cs.qm</file>
+        <file alias="da">locale/ojacoin_da.qm</file>
+        <file alias="de">locale/ojacoin_de.qm</file>
+        <file alias="en">locale/ojacoin_en.qm</file>
+        <file alias="en_US">locale/ojacoin_en_US.qm</file>
+        <file alias="eo">locale/ojacoin_eo.qm</file>
+        <file alias="es">locale/ojacoin_es.qm</file>
+        <file alias="es_ES">locale/ojacoin_es_ES.qm</file>
+        <file alias="fi">locale/ojacoin_fi.qm</file>
+        <file alias="fr_FR">locale/ojacoin_fr_FR.qm</file>
+        <file alias="hi_IN">locale/ojacoin_hi_IN.qm</file>
+        <file alias="hr">locale/ojacoin_hr.qm</file>
+        <file alias="hr_HR">locale/ojacoin_hr_HR.qm</file>
+        <file alias="it">locale/ojacoin_it.qm</file>
+        <file alias="ja">locale/ojacoin_ja.qm</file>
+        <file alias="ko_KR">locale/ojacoin_ko_KR.qm</file>
+        <file alias="lt_LT">locale/ojacoin_lt_LT.qm</file>
+        <file alias="nl">locale/ojacoin_nl.qm</file>
+        <file alias="pl">locale/ojacoin_pl.qm</file>
+        <file alias="pt">locale/ojacoin_pt.qm</file>
+        <file alias="pt_BR">locale/ojacoin_pt_BR.qm</file>
+        <file alias="ro_RO">locale/ojacoin_ro_RO.qm</file>
+        <file alias="ru">locale/ojacoin_ru.qm</file>
+        <file alias="sk">locale/ojacoin_sk.qm</file>
+        <file alias="sv">locale/ojacoin_sv.qm</file>
+        <file alias="tr">locale/ojacoin_tr.qm</file>
+        <file alias="uk">locale/ojacoin_uk.qm</file>
+        <file alias="vi">locale/ojacoin_vi.qm</file>
+        <file alias="zh_CN">locale/ojacoin_zh_CN.qm</file>
+        <file alias="zh_TW">locale/ojacoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,26 @@
+# /etc/conf.d/ojacoind: config file for /etc/init.d/ojacoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/ojacoin/ojacoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/ojacoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/ojacoind.pid"
+
+# Where to write ojacoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/ojacoind"
+
+# User and group to own ojacoind process
+#BITCOIND_USER="ojacoin"
+#BITCOIND_GROUP="ojacoin"
+
+# Path to ojacoind executable
+#BITCOIND_BIN="/usr/bin/ojacoind"
+
+# Nice value to run ojacoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
