@@ -3,7 +3,7 @@
  
 
 # What is OJA?
-ojacoin is a Blockchain using the highly-secure and power-efficient NIST5 algorithm. Combining limited Proof-of-Work, ojacoin coin (ojacoin) is unique in its distribution. 
+OJA Coin is a Blockchain using the highly-secure and power-efficient NIST5 algorithm. Combining limited Proof-of-Work, OJA coin (OJA) is unique in its distribution. 
 
 <a name="specifications"></a>
 ## Technical Specifications
@@ -43,7 +43,7 @@ Security is another very important point on which today's world stands. By using
 Applications are the future need for higher efficiency and cost reduction. OJA is your solution for decentralized Payments.
 
 ### Efficiency
-OJA uses the NIST5 hash, which is chosen as the winning algorithm by the US Nation of Science competition. Combination of security and mining efficiency were the key points taken into account.
+OJA coin uses the NIST5 hash, which is chosen as the winning algorithm by the US Nation of Science competition. Combination of security and mining efficiency were the key points taken into account.
 
 
 # Why NIST5?
