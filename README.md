@@ -9,7 +9,7 @@ OJA Coin is a Blockchain using the highly-secure and power-efficient NIST5 algor
 ## Technical Specifications
 <table>
 <tr> <td>Ticker</td><td>OJA</td></tr>
-<tr> <td>Algorithm</td><td>NIST5/SHA-256</td></tr>
+<tr> <td>Algorithm</td><td>NIST5</td></tr>
 <tr> <td>Consensus</td><td>Proof-of-Work</td></tr>
 <tr> <td>Maximum Supply</td><td>720,000,000 </td></tr>
 <tr> <td>Block Time</td><td>60 Seconds</td></tr>
