@@ -16,7 +16,7 @@ OJA Coin  is a Blockchain using the highly-secure, high-speed, environmentally a
 <tr> <td>Block Size</td><td>10 MB</td></tr>
 <tr> <td>Transactions Per Second</td><td>~800</td></tr>
 <tr> <td>Retarget</td><td>Every Block</td></tr>
-<tr> <td>Block halving</td><td>Approx. 6 months</td></tr>
+<tr> <td>Block halving</td><td>Approx. every 6 months</td></tr>
 <tr> <td>Lightning Network</td><td>Yes</td></tr>
 <tr> <td>Atomic Swap</td><td>Yes (Barterdex)</td></tr>
 <tr> <td>Foundation</td><td>Yes</td></tr>
