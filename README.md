@@ -21,6 +21,10 @@ OJA Coin is a Blockchain using the highly-secure and power-efficient NIST5 algor
 <tr> <td>Foundation</td><td>Yes</td></tr>
 </table>
 
+## Compiler requirements
+
+OS: Ubuntu 16.04 or Ubuntu 18.04
+ 
 ## Work in progress
 <table>
 <tr> <td>SegWit</td></tr>
