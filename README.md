@@ -3,7 +3,7 @@
  
 
 # What is OJA?
-OJA Coin is a Blockchain using the highly-secure and power-efficient NIST5 algorithm. Combining limited Proof-of-Work, OJA coin (OJA) is unique in its distribution. 
+OJA Coin  is a Blockchain using the highly-secure, high-speed, environmentally and cost friendly. It's explicitly built to speed up transaction with almost zero fee thanks to its power-efficient NIST5 winning algorithm. Combining limited Proof-of-Work, OJA coin (OJA) is unique in its distribution. 
 
 <a name="specifications"></a>
 ## Technical Specifications
