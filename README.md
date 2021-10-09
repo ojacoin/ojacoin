@@ -52,4 +52,4 @@ OJA coin uses the NIST5 hash, which is chosen as the winning algorithm by the US
 
 
 # Why NIST5?
-OJA chose to use NIST5 as its hashing algorithm because it has been proven to be more secure and power-efficient than other leading algorithms. NIST5 is a combination of the finalists and winner of the US National Institute of Standards and Technology Hash Function Competition (specifically BLAKE, Grøstl, JH, Keccak/SHA-3, and Skein). NIST5 was created fairly recently, and immediately saw use by other coins, but failed to see mainstream adoption.
+OJA chose to use NIST5 as its hashing algorithm because it has been proven to be more secure and power-efficient than other leading algorithms. NIST5 is a combination of the finalists and winner of the US National Institute of Standards and Technology Hash Function Competition (specifically BLAKE, Grøstl, JH, Keccak/SHA-3, and Skein).
