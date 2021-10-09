@@ -3,7 +3,10 @@
  
 
 # What is OJA?
-OJA Coin  is a Blockchain using the highly-secure, high-speed, environmentally and cost friendly. It's explicitly built to speed up transaction with almost zero fee thanks to its power-efficient NIST5 winning algorithm. Combining limited Proof-of-Work, OJA coin (OJA) is unique in its distribution. 
+OJA Coin  is a high-speed, and cost-friendly blockchain. It's explicitly built to speed up transactions with almost zero transaction fee. We use a power efficient algorithm hash, NIST5 which is a winning algorithm of the US National Institute.
+ 
+So the OJA blockchain is not only fast and cost-friendly but also environmentally friendly. These elements are very important for society nowadays. And it also becomes our focus in building OJA infrastructure and platform.
+
 
 <a name="specifications"></a>
 ## Technical Specifications
@@ -44,11 +47,32 @@ Time is one of the key elements in our lives. Especially when it comes to financ
 ### Safe & Anonymous
 Security is another very important point on which today's world stands. By using OJA you can make secure payments be done, which gives confidence to the community.
 
+### Security
+Security is another very important point on which today's world stands. OJA chose to use NIST5 as its hashing algorithm because it has been proven to be more secure and power-efficient than other leading algorithms.
+
+NIST5 is an exhaustive set of guidelines for how organizations can prevent, detect, and respond to cyberattacks. 
+
+It is officially known as the Framework for Improving Critical Infrastructure Cybersecurity, it was developed by the federal government to serve as a standard for private sector companies.
+
+NIST5 was originally aimed at industries essential to economic and national security such as banking, defense, commerce, and communications.
+
+However, a wide variety of organizations in all industries have since adopted it, including in cryptocurrency, like in OJA Coin for example.
+
+There are 5 elements of the NIST5,
+Identity
+Protect
+Detect
+Respond
+Recover
+
+There are a total of 108 security controls that provide specific security action items. Each subcategory also provides resources referencing elements of other frameworks such as ISO 27001, COBIT, ISA 62443, NIST SP 800-53 and Payment Card Industry Data Security Standard (PCI DSS)
+
+
 ### Decentralized, Distributed
 Applications are the future need for higher efficiency and cost reduction. OJA is your solution for decentralized Payments.
 
-### Efficiency
-OJA coin uses the NIST5 hash, which is chosen as the winning algorithm by the US Nation of Science competition. Combination of security and mining efficiency were the key points taken into account.
+### Power Efficiency
+OJA coin uses the NIST5 hash, which is chosen as the winning algorithm by the US Nation of Science competition as power efficient hash algorithm. It is not only more secure but also environtment friendly.
 
 
 # Why NIST5?
