@@ -1,11 +1,11 @@
 # Paper Wallet Import Instructions
 
 <p align="center">
-    <img src="https://media.discordapp.net/attachments/516295832904138762/542275592704491521/bitcoin.png"
+    <img src="https://ojacoin.org/wp-content/uploads/2021/07/ojacoin-logo1x.png"
         height="130">
 </p>
 
-### Before you begin, you’ll need to download the `ojacoin QT wallet` : https://ojacoinproject.org/wallets/
+### Before you begin, you’ll need to download the `ojacoin QT wallet` : https://ojacoin.org/#download
 
 
 ## Windows/Mac/Linux 
@@ -30,8 +30,7 @@
 
 If you experience any difficulties, please contact one of our experienced ojacoin community members, available on these platforms: 
 
+Telegram: https://t.me/ojacoin_org ojacoin
 
-Discord: https://discord.gg/B8F7Jdv 
+Discord: https://discord.gg/uxzxuh9S
 (please join the `#help-support` channel for assistance) 
- 
-Telegram: https://t.me/ojacoincoin ojacoin
