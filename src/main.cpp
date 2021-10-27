@@ -2128,9 +2128,18 @@ int64_t GetBlockValue(int nHeight, bool fProofOfStake, uint64_t nCoinAge)
         } else if (nHeight <= 11811 && nHeight > 11522)
         {
             nSubsidy = 500 * COIN;
-        } else if (nHeight > 11811)
+        } else if (nHeight <= 250000 && nHeight > 11811)
         {
             nSubsidy = 500 * COIN;
+        } else if (nHeight <= 500000 && nHeight > 250000)
+        {
+            nSubsidy = 250 * COIN;
+        } else if (nHeight <= 750000 && nHeight > 500000)
+        {
+            nSubsidy = 125 * COIN;
+        } else if (nHeight > 750000)
+        {
+            nSubsidy = 62.5 * COIN;
         } else {
             nSubsidy = 0 * COIN;
         }
