@@ -3,7 +3,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The inlcoin developers
+// Copyright (c) 2021 The Ojacoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -119,8 +119,8 @@ unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlo
     if (nActualSpacing < 0)
         nActualSpacing = (pindexLast->nHeight+1>=nHardForkBlock ? nTargetSpacing : nTargetSpacingOld);
 
-    // inlcoin coin: target change every block
-    // inlcoin coin: retarget with exponential moving toward target spacing
+    // Ojacoin coin: target change every block
+    // Ojacoin coin: retarget with exponential moving toward target spacing
     uint256 bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
 
