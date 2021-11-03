@@ -1,8 +1,9 @@
+
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The ojacoin developers
+// Copyright (c) 2018 The inlcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -27,7 +28,7 @@ const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfSta
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake)
 {
-    /* current difficulty formula, ojacoin - DarkGravity v3, written by Evan Duffield - evan@dashpay.io */
+    /* current difficulty formula, inlcoin - DarkGravity v3, written by Evan Duffield - evan@dashpay.io */
     const CBlockIndex* BlockLastSolved = pindexLast;
     const CBlockIndex* BlockReading = pindexLast;
     int64_t nActualTimespan = 0;
@@ -40,40 +41,6 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || BlockLastSolved->nHeight < PastBlocksMin) {
         return Params().ProofOfWorkLimit().GetCompact();
-    }
-
-    if (pindexLast->nHeight >= Params().POS_START_BLOCK()) {
-        uint256 bnTargetLimit = fProofOfStake ? (~uint256(0) >> 20) : Params().ProofOfWorkLimit();
-
-        int64_t nActualSpacing = 0;
-
-        const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
-        const CBlockIndex* pindexPrevPrev = GetLastBlockIndex(pindexPrev->pprev, fProofOfStake);
-        nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
-
-        if (nActualSpacing < 0)
-            nActualSpacing = 1;
-
-        // ecacoin: target change every block
-        // ecacoin: retarget with exponential moving toward target spacing
-        uint256 bnNew;
-        bnNew.SetCompact(pindexPrev->nBits);
-
-        bnNew *= ((Params().Interval() - 1) * Params().TargetSpacing() + nActualSpacing + nActualSpacing);
-        bnNew /= ((Params().Interval() + 1) * Params().TargetSpacing());
-
-        if (Params().NetworkID() == CBaseChainParams::MAIN)
-        {
-            int height = pindexLast->nHeight + 1;
-
-            if (height < (Params().WALLET_UPGRADE_BLOCK()+10) && height >= Params().WALLET_UPGRADE_BLOCK())
-                bnNew *= (int)pow(4.0, 10.0+Params().WALLET_UPGRADE_BLOCK()-height); // slash difficulty and gradually ramp back up over 10 blocks
-        }
-
-        if (bnNew <= 0 || bnNew > bnTargetLimit)
-            bnNew = bnTargetLimit;
-
-        return bnNew.GetCompact();
     }
 
     for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
@@ -126,9 +93,9 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
 unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake)
 {
-    int64_t nTargetSpacing = 150; // 2.5 minutes
-    int64_t nTargetSpacingOld = 300; // 5 minutes
-    int64_t nTargetTimespan = 15 * 60;
+    int64_t nTargetSpacing = 600; // 2.5 minutes
+    int64_t nTargetSpacingOld = 600; // 5 minutes
+    int64_t nTargetTimespan = 10 * 60;
     int64_t nHardForkBlock = 112200;
 
     uint256 bnTargetLimit = fProofOfStake ? (~uint256(0) >> 20) : Params().ProofOfWorkLimit();
@@ -152,22 +119,22 @@ unsigned int GetLegacyNextWorkRequired(const CBlockIndex* pindexLast, const CBlo
     if (nActualSpacing < 0)
         nActualSpacing = (pindexLast->nHeight+1>=nHardForkBlock ? nTargetSpacing : nTargetSpacingOld);
 
-    // ojacoin coin: target change every block
-    // ojacoin coin: retarget with exponential moving toward target spacing
+    // inlcoin coin: target change every block
+    // inlcoin coin: retarget with exponential moving toward target spacing
     uint256 bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
 
     if (pindexLast->nHeight+1 >= nHardForkBlock)
     {
-        int64_t ojacoinerval = nTargetTimespan / nTargetSpacing;
-        bnNew *= ((ojacoinerval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
-        bnNew /= ((ojacoinerval + 1) * nTargetSpacing);
+        int64_t nInterval = nTargetTimespan / nTargetSpacing;
+        bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
+        bnNew /= ((nInterval + 1) * nTargetSpacing);
     }
     else
     {
-        int64_t ojacoinerval = nTargetTimespan / nTargetSpacingOld;
-        bnNew *= ((ojacoinerval - 1) * nTargetSpacingOld + nActualSpacing + nActualSpacing);
-        bnNew /= ((ojacoinerval + 1) * nTargetSpacingOld);
+        int64_t nInterval = nTargetTimespan / nTargetSpacingOld;
+        bnNew *= ((nInterval - 1) * nTargetSpacingOld + nActualSpacing + nActualSpacing);
+        bnNew /= ((nInterval + 1) * nTargetSpacingOld);
     }
 
     if (bnNew <= 0 || bnNew > bnTargetLimit)
