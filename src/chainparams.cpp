@@ -278,8 +278,8 @@ public:
         assert(genesis.GetHash() <= hashTarget);
 
         hashGenesisBlock = genesis.GetHash();
-        printf("Merkle hash test: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-        printf("Block hash test: %s\n", hashGenesisBlock.ToString().c_str());
+        //printf("Merkle hash test: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        //printf("Block hash test: %s\n", hashGenesisBlock.ToString().c_str());
         assert(genesis.hashMerkleRoot == uint256("0xc5f622bad72a7eb7bf7e0699b8810e4a0371d742250d8332d3a4a444522a59ed"));
         assert(hashGenesisBlock == uint256("0x0000b301b6a653548e0c15b32eff3b82784d8d668fb60b237bd3e5e50b50e49d"));
 
