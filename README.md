@@ -11,7 +11,7 @@ So the OJA blockchain is not only fast and cost-friendly but also environmentall
 <a name="specifications"></a>
 ## Technical Specifications
 <table>
-<tr> <td>Ticker</td><td>OJA</td></tr>
+<tr> <td>Ticker</td><td>OJX</td></tr>
 <tr> <td>Algorithm</td><td>NIST5</td></tr>
 <tr> <td>Consensus</td><td>Proof-of-Work</td></tr>
 <tr> <td>Maximum Supply</td><td>720,000,000 </td></tr>
@@ -69,11 +69,11 @@ There are a total of 108 security controls that provide specific security action
 
 
 ### Decentralized, Distributed
-Applications are the future need for higher efficiency and cost reduction. OJA is your solution for decentralized Payments.
+Applications are the future need for higher efficiency and cost reduction. OJA Coin is your solution for decentralized Payments.
 
 ### Power Efficiency
 OJA coin uses the NIST5 hash, which is chosen as the winning algorithm by the US Nation of Science competition as power efficient hash algorithm. It is not only more secure but also environtment friendly.
 
 
 # Why NIST5?
-OJA chose to use NIST5 as its hashing algorithm because it has been proven to be more secure and power-efficient than other leading algorithms. NIST5 is a combination of the finalists and winner of the US National Institute of Standards and Technology Hash Function Competition (specifically BLAKE, Grøstl, JH, Keccak/SHA-3, and Skein).
+OJA Coin chose to use NIST5 as its hashing algorithm because it has been proven to be more secure and power-efficient than other leading algorithms. NIST5 is a combination of the finalists and winner of the US National Institute of Standards and Technology Hash Function Competition (specifically BLAKE, Grøstl, JH, Keccak/SHA-3, and Skein).
